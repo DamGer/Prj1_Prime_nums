@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(Prime_Nums)
+set(SOURCES Prime_Nums.cpp)
+set(HEADERS Prime_Nums.h)
+add_library(Prime_Nums ${SOURCES} ${HEADERS})
+target_include_directories(Prime_Nums PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
